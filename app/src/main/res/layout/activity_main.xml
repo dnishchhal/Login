@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/llogin"
+    android:backgroundTint="#a7ffeb"
+    android:backgroundTintMode="multiply">
+
+    <TextView android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Login Form"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#ffffff" />
+
+    <EditText android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Username"
+        android:layout_below="@+id/head"
+        android:inputType="textPersonName"
+        android:textColorHint="#d2ffffff"
+        android:textColor="#ffffff"
+        android:textColorHighlight="#ffffff" />
+
+    <EditText android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textIsSelectable="false"
+        android:textColorHint="#d2ffffff"
+        android:textColor="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:layout_marginBottom="20dp"/>
+
+    <Button android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/pass"
+        android:background="#63ffffff"
+        android:textColor="#070707" />
+    <Button android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_below="@+id/pass"
+        android:layout_toRightOf="@+id/login"
+        android:layout_marginLeft="50dp"
+        android:layout_alignRight="@+id/forgot"
+        android:layout_alignEnd="@+id/forgot"
+        android:background="#63ffffff"
+        android:textColor="#070707" />
+    <Button android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_below="@+id/login"
+        android:layout_marginLeft="50dp"
+        android:background="#63ffffff"
+        android:layout_marginTop="20dp"
+        android:textColor="#070707" />
+    <Button android:id="@+id/forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Forgot Password "
+        android:layout_below="@+id/login"
+        android:layout_toRightOf="@+id/signUp"
+        android:layout_marginLeft="50dp"
+        android:background="#63ffffff"
+        android:layout_marginTop="20dp"
+        android:textColor="#070707" />
+
+</RelativeLayout>
